@@ -1,0 +1,20 @@
+.grid {
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 20px;
+}
+
+
+.grid>div {
+    background-color: gray;
+}
+
+.grid>div:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.grid>div:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

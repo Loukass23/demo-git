@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-areas: "logo title title"
+        "nav nav nav"
+        "text img img"
+
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.headerText {
+    grid-area: title;
+}
+
+.headerMenu {
+    grid-area: nav;
+}
+
+.mainContent {
+    grid-area: text;
+}
+
+.mainImg {
+    grid-area: img;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: "logo title title"
+            "nav nav nav"
+            "text text text"
+            "img img img"
+
+    }
+}
